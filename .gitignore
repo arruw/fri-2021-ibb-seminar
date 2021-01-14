@@ -459,6 +459,3 @@ dmypy.json
 !.vscode/extensions.json
 
 # End of https://www.toptal.com/developers/gitignore/api/vscode,visualstudiocode,python,jupyternotebooks,latex
-
-datasets/*
-checkpoints/*
