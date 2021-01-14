@@ -18,8 +18,5 @@
 
 STYLEGAN_PATH="submodules/stylegan2-ada"
 
-cmd="(cd /scratch && DNNLIB_CACHE_DIR=/scratch/.cache python $STYLEGAN_PATH/generate.py --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/ffhq.pkl $@)"
-echo $cmd
-
 docker run --gpus all -it --rm -v `pwd`:/scratch --user $(id -u):$(id -g) stylegan2ada:latest bash -c \
-    "(cd /scratch && DNNLIB_CACHE_DIR=/scratch/.cache python $STYLEGAN_PATH/generate.py --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/ffhq.pkl --outdir=out --dlatents=./out-bb/dlatents.npz)
+    "(cd /scratch && DNNLIB_CACHE_DIR=/scratch/.cache python $STYLEGAN_PATH/generate.py --network=https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/ffhq.pkl $*)"

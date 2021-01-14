@@ -1,0 +1,1 @@
+You can download checkpoints from here: https://drive.google.com/drive/folders/1pe1uFsKbNa1B8kYuiMptQpi2fLXi8oLe?usp=sharing
