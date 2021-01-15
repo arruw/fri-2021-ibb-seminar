@@ -9,6 +9,7 @@ Checkpoints for pretrained networks are available [here](https://drive.google.co
 
 Interpolation between two noise vectors is demonstrated in [./Interpolation.ipynb](./Interpolation.ipynb).
 
+Example of fixing childish paint skills using StyleGAN2 [4] is demonstrated in [./StyleGAN2.ipynb](./StyleGAN2.ipynb).
 Additionally, StyleGAN2-ADA [4] wrapper scripts are provided in the `./tools/`.
 
 ## Requirements
@@ -24,11 +25,10 @@ Additionally, StyleGAN2-ADA [4] wrapper scripts are provided in the `./tools/`.
 
 ```bash
 # --- StyleGAN2 ---
-$ ./tools/stylegan2-generate.sh  --outdir=out/generate --seeds=14,53,435
-$ ./tools/stylegan2-projector.sh --outdir=out/project  --seed=14 --target=out/generate/seed0014.png
+$ ./tools/stylegan2-generate.sh -h
+$ ./tools/stylegan2-projector.sh -h
 
 # --- MISC ---
-
 # Clean large notebook
 $ ./tools/jupyter-clean.sh my_notebook.ipynb
 ```
