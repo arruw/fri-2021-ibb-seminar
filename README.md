@@ -1,4 +1,8 @@
-# Intro to GANs
+# Intro in the Generative Adversarial Networks
+
+Report is available here: [./report.pdf](./report.pdf)
+
+![Tampered projections](./figures/header.png)
 
 This repository implements 3 Generative Adversarial Networks (GANs) on the MNIST dataset:
  * Simple GAN ([./First_GAN.ipynb](./First_GAN.ipynb))
@@ -18,8 +22,6 @@ Additionally, StyleGAN2-ADA [4] wrapper scripts are provided in the `./tools/`.
 * [NVIDIA Container Runtime](https://github.com/NVIDIA/nvidia-container-runtime)
 * Conda (see [./conda-env.yml](./conda-env.yml))
 * NVIDIA GPU, NVIDIA drivers (see [NVlabs/stylegan2-ada](https://github.com/NVlabs/stylegan2-ada))
-
-## 
 
 ## Tools
 
